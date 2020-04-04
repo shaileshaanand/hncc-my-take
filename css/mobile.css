@@ -1,0 +1,96 @@
+.navbar {
+    display: block;
+    text-align: left;
+    /* padding-bottom: 0.5rem; */
+    transition: height 1s ease-in;
+    z-index: 8;
+    margin: 1rem;
+}
+
+.navbar ul {
+    text-align: center;
+    max-height: 0;
+    display: block;
+    /* opacity: 0; */
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.navbar ul li a {
+    padding: .2rem;
+    display: block;
+}
+
+.navbar ul li:last-child {
+    /* margin-bottom: 1rem; */
+}
+
+.navbar .ham-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+.ham-container .hamburger {
+    border: 1px solid var(--mid-gray);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 3px;
+}
+
+.hamburger .ham-mid {
+    border: 1px solid var(--mid-gray);
+    width: 65%;
+}
+
+.cards {
+    display: block;
+}
+
+#showcase #showcase-img {
+    display: none;
+}
+
+#showcase {
+    background-image: url('../img/about-dark.png');
+    background-position: center;
+    background-size: 90vw;
+    background-repeat: no-repeat;
+}
+
+#recent-events .recent-card {
+    margin: 1.3rem auto;
+}
+
+
+/* #showcase::after {
+    content: 'ee';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    /* background: var(--dark-gray) url('../img/about.png') center c/ 
+    background-image: url('../img/about.png');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+} */
+
+.logos {
+    display: block;
+}
+
+.logos .splogo {
+    margin: 1rem auto;
+    width: 200px;
+}
