@@ -17,7 +17,7 @@ function scrollTo(element) {
         top: element.offsetTop - 70
     });
 }
-document.querySelectorAll('.navbar li a').forEach(element => {
+document.querySelectorAll('.scroll').forEach(element => {
     element.addEventListener('click', () => {
         if (navvisible) {
             document.getElementById("navlist").style.maxHeight = '0';
