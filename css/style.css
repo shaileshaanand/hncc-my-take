@@ -99,6 +99,7 @@ body {
     border-radius: 10px;
     box-shadow: 0.1em 0.1em 1em var(--dark-gray);
     background: #fff;
+    cursor: pointer;
 }
 
 .navbar ul {
