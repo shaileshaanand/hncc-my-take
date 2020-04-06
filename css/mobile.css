@@ -54,37 +54,23 @@
     display: block;
 }
 
-#showcase #showcase-img {
-    display: none;
-}
-
 #showcase {
-    background-image: url('../img/about-dark.png');
-    background-position: center;
-    background-size: 90vw;
-    background-repeat: no-repeat;
+    background-size: 95vw;
 }
 
 #recent-events .recent-card {
     margin: 1.3rem auto;
 }
 
+#showcase .angle {
+    transform: translateY(120px);
+}
 
-/* #showcase::after {
-    content: 'ee';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-    /* background: var(--dark-gray) url('../img/about.png') center c/ 
-    background-image: url('../img/about.png');
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.2;
-} */
+@keyframes godown {
+    50% {
+        transform: translateY(180px);
+    }
+}
 
 .logos {
     display: block;

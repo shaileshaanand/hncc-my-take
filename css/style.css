@@ -131,7 +131,7 @@ body {
 }
 
 #showcase {
-    background: var(--dark-gray);
+    background: var(--dark-gray) url("../img/about-dark-compressed.png") no-repeat center center/80vw;
     min-height: 100vh;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -163,13 +163,8 @@ body {
     color: #cddc39;
 }
 
-#showcase #showcase-img {
-    width: 300px;
-    margin-top: 5rem;
-}
-
 #showcase .angle {
-    transform: translateY(60px);
+    transform: translateY(180px);
     animation: godown 2s ease-in-out infinite;
     font-size: 7rem;
     z-index: 1;
@@ -177,22 +172,7 @@ body {
 
 @keyframes godown {
     50% {
-        transform: translateY(140px);
-    }
-}
-
-@media (max-height:860px) {
-    #showcase #showcase-img {
-        display: none;
-    }
-    #showcase .angle {
-        transform: translateY(80px);
-    }
-    #showcase {
-        background-image: url('../img/about-dark.png');
-        background-position: center;
-        background-size: 90vw;
-        background-repeat: no-repeat;
+        transform: translateY(240px);
     }
 }
 
