@@ -24,12 +24,12 @@ a {
 
 .head-font {
     font-weight: lighter;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
 }
 
 .section-head-font {
     font-weight: lighter;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     font-size: 3rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -79,7 +79,7 @@ a {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 1.8;
 }
 
@@ -112,7 +112,7 @@ body {
     padding: 1.5rem 1.8rem;
     color: var(--dark-gray);
     display: inline-block;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar ul li a:hover {
@@ -131,10 +131,11 @@ body {
 }
 
 #showcase {
-    background: var(--dark-gray) url("../img/about-dark-compressed.png") no-repeat center center/80vw;
+    background: var(--dark-gray) url("../img/about-dark-compressed.png")
+        no-repeat center center/80vw;
     min-height: 100vh;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -154,7 +155,7 @@ body {
 }
 
 #showcase p::after {
-    content: '|';
+    content: "|";
     color: #fff;
 }
 
@@ -164,19 +165,27 @@ body {
 }
 
 #showcase .angle {
-    transform: translateY(180px);
+    position: absolute;
+    bottom: 10vh;
+    /* transform: translateY(180px); */
+    /* transform: translateY(calc(100vh)); */
     animation: godown 2s ease-in-out infinite;
     font-size: 7rem;
     z-index: 1;
 }
-
+@media (max-height: 430px) {
+    #showcase .angle {
+        bottom: 5vh;
+    }
+}
 @keyframes godown {
     50% {
-        transform: translateY(240px);
+        /* transform: translateY(100vh); */
+        bottom: 0vh;
     }
 }
 
-#about-us>.container>p {
+#about-us > .container > p {
     font-size: 1rem;
     margin: 2rem 0px;
 }
@@ -209,7 +218,7 @@ body {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     font-size: 1.5rem;
     font-weight: lighter;
 }

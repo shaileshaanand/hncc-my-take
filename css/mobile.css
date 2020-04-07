@@ -17,12 +17,12 @@
 }
 
 .navbar ul li a {
-    padding: .2rem;
+    padding: 0.2rem;
     display: block;
 }
 
 .navbar ul li:last-child {
-    /* margin-bottom: 1rem; */
+    margin-bottom: 1rem;
 }
 
 .navbar .ham-container {
@@ -60,16 +60,6 @@
 
 #recent-events .recent-card {
     margin: 1.3rem auto;
-}
-
-#showcase .angle {
-    transform: translateY(120px);
-}
-
-@keyframes godown {
-    50% {
-        transform: translateY(180px);
-    }
 }
 
 .logos {
