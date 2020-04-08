@@ -1,3 +1,14 @@
+#social-media .social a {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    transform: translateX(82%);
+}
+#social-media .social a i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
 .navbar {
     display: block;
     text-align: left;

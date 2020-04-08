@@ -5,6 +5,7 @@
     --dark-gray: #121212;
     --mid-gray: #666666;
     --green-gray: #607d8b;
+    --lime: #cddc39;
 }
 
 .logo-img {
@@ -83,6 +84,35 @@ body {
     line-height: 1.8;
 }
 
+#social-media {
+    position: fixed;
+    top: 75vh;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#social-media .social a {
+    background: var(--lime);
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.7rem;
+    transform: translateX(80%);
+    border-radius: 7px;
+    font-size: 0.7rem;
+    transition: transform 0.7s ease;
+    /* width: max-content; */
+}
+
+#social-media .social a:hover {
+    transform: translateX(-0.3rem);
+}
+
+#social-media .social a i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
 #header {
     position: fixed;
     width: 100%;
@@ -141,7 +171,7 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 1.3rem;
 }
 
 #showcase h1 {
@@ -161,7 +191,7 @@ body {
 
 #showcase p {
     font-size: 1.9rem;
-    color: #cddc39;
+    color: var(--lime);
 }
 
 #showcase .angle {
