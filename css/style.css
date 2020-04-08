@@ -146,12 +146,12 @@ body {
 
 #showcase h1 {
     font-size: 1.9rem;
-    font-weight: lighter;
+    /* font-weight: lighter; */
 }
 
 #showcase h3 {
     font-size: 1.3rem;
-    font-weight: lighter;
+    /* font-weight: lighter; */
 }
 
 #showcase p::after {
