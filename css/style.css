@@ -96,10 +96,10 @@ body {
     display: flex;
     align-items: center;
     margin: 1rem 0;
-    padding: 1rem;
+    padding: 0.7rem;
     transform: translateX(80%);
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 0.7rem;
     transition: transform 0.7s ease;
     /* width: max-content; */
 }
@@ -110,7 +110,7 @@ body {
 
 #social-media .social a i {
     margin-right: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #header {
