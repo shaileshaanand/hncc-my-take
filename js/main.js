@@ -24,7 +24,6 @@ document.querySelectorAll(".scroll").forEach((element) => {
             navvisible = false;
         }
         target_id = element.getAttribute("data-scroll");
-        console.log(target_id);
         scrollTo(document.getElementById(target_id));
     });
 });
