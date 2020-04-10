@@ -1,5 +1,3 @@
-/* Temp Stuff */
-
 :root {
     --light-gray: #bdbdbd;
     --dark-gray: #121212;
@@ -104,7 +102,6 @@ body {
     border-radius: 7px;
     font-size: 0.7rem;
     transition: transform 0.7s ease;
-    /* width: max-content; */
 }
 
 #social-media .social a:hover {
@@ -179,12 +176,10 @@ body {
 
 #showcase h1 {
     font-size: 1.9rem;
-    /* font-weight: lighter; */
 }
 
 #showcase h3 {
     font-size: 1.3rem;
-    /* font-weight: lighter; */
 }
 
 #showcase p::after {
@@ -200,8 +195,6 @@ body {
 #showcase .angle {
     position: absolute;
     bottom: 10vh;
-    /* transform: translateY(180px); */
-    /* transform: translateY(calc(100vh)); */
     animation: godown 2s ease-in-out infinite;
     font-size: 7rem;
     z-index: 1;
@@ -213,7 +206,6 @@ body {
 }
 @keyframes godown {
     50% {
-        /* transform: translateY(100vh); */
         bottom: 0vh;
     }
 }
@@ -355,7 +347,6 @@ body {
 
 .logos {
     display: flex;
-    /* display: none; */
     text-align: center;
     align-items: center;
     justify-content: center;
