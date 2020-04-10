@@ -86,3 +86,39 @@ window.onload = function () {
     // css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     // document.body.appendChild(css);
 };
+
+// Image Gallery
+images = document.querySelectorAll(".images img");
+n_images = images.length;
+left_btn = document.getElementById("left");
+right_btn = document.getElementById("right");
+current_img = 1;
+left_btn.addEventListener("click", prevImage);
+right_btn.addEventListener("click", nextImage);
+function prevImage() {
+    // console.log("prev");
+    if (current_img === 1) {
+        current_img = n_images;
+        setImage(current_img, 1);
+    } else {
+        current_img--;
+        setImage(current_img, current_img + 1);
+    }
+}
+function nextImage() {
+    if (current_img === n_images) {
+        current_img = 1;
+        setImage(current_img, n_images);
+    } else {
+        current_img++;
+        setImage(current_img, current_img - 1);
+    }
+}
+function setImage(img_num, prev_img_num) {
+    // console.log(img_num + " " + prev_img_num);
+    images[prev_img_num - 1].classList.remove("visible");
+    images[img_num - 1].classList.add("visible");
+}
+setInterval(() => {
+    nextImage();
+}, 5000);
