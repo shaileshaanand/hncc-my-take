@@ -70,7 +70,18 @@
 #recent-events .recent-card {
     margin: 1.3rem auto;
 }
-
+#gallery .gallery-container i {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+#gallery .gallery-container i.left {
+    left: 0rem;
+    transform: translate(-3px, -50%);
+}
+#gallery .gallery-container i.right {
+    right: 0rem;
+    transform: translate(3px, -50%);
+}
 .logos {
     display: block;
 }
