@@ -316,9 +316,10 @@ body {
     font-size: 1.5rem;
     line-height: 1.5;
 }
-
+#recent-events .cards {
+    flex-wrap: wrap;
+}
 #recent-events .recent-card {
-    flex: 1;
     text-align: center;
     justify-self: center;
     margin: 1rem;
@@ -326,6 +327,10 @@ body {
     border-radius: 7px;
     transition: box-shadow 0.4s ease-in;
     padding: 0.5rem;
+    width: max-content;
+}
+#recent-events .container {
+    max-width: 1300px;
 }
 
 #recent-events .recent-card img {
@@ -335,6 +340,8 @@ body {
 
 #recent-events .recent-card h4 {
     padding: 0rem 0.2rem;
+    display: block;
+    max-width: 250px;
 }
 
 #recent-events .recent-card:hover {
