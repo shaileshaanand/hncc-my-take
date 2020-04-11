@@ -322,15 +322,15 @@ body {
     text-align: center;
     justify-self: center;
     margin: 1rem;
-    width: 250px;
     border: 1px solid var(--light-gray);
-    overflow: auto;
     border-radius: 7px;
     transition: box-shadow 0.4s ease-in;
+    padding: 0.5rem;
 }
 
 #recent-events .recent-card img {
-    width: 90%;
+    width: 250px;
+    height: 355px;
 }
 
 #recent-events .recent-card h4 {
