@@ -391,6 +391,24 @@ body {
     right: 0rem;
     transform: translate(7px, -50%);
 }
+#gallery .gallery-container .dots {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    display: flex;
+}
+#gallery .gallery-container .dots .dot {
+    width: 1.3rem;
+    height: 1.3rem;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    margin: 7px;
+    border-radius: 50%;
+}
+#gallery .gallery-container .dots .highlighted {
+    background: rgba(255, 255, 255, 0.8);
+}
 
 #sponsors {
     background: #f4f4f4;

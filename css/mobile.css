@@ -82,6 +82,11 @@
     right: 0rem;
     transform: translate(3px, -50%);
 }
+#gallery .gallery-container .dots .dot {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 5px;
+}
 .logos {
     display: block;
 }

@@ -90,35 +90,51 @@ window.onload = function () {
 // Image Gallery
 images = document.querySelectorAll(".images img");
 n_images = images.length;
+let dot, dots;
+dots = document.createElement("div");
+dots.classList.add("dots");
+for (let i = 0; i < n_images; i++) {
+    dot = document.createElement("div");
+    dot.classList.add("dot");
+    if (i == 0) {
+        dot.classList.add("highlighted");
+    }
+    dots.appendChild(dot);
+}
+document.querySelector(".gallery-container").appendChild(dots);
 left_btn = document.getElementById("left");
 right_btn = document.getElementById("right");
+dom_dots = document.querySelectorAll(".dot");
 current_img = 1;
 left_btn.addEventListener("click", prevImage);
 right_btn.addEventListener("click", nextImage);
 function prevImage() {
-    // console.log("prev");
     if (current_img === 1) {
-        current_img = n_images;
-        setImage(current_img, 1);
+        setImage(n_images);
     } else {
-        current_img--;
-        setImage(current_img, current_img + 1);
+        setImage(current_img - 1);
     }
 }
 function nextImage() {
+    console.log(current_img + "  " + n_images);
     if (current_img === n_images) {
-        current_img = 1;
-        setImage(current_img, n_images);
+        setImage(1);
     } else {
-        current_img++;
-        setImage(current_img, current_img - 1);
+        setImage(current_img + 1);
     }
 }
-function setImage(img_num, prev_img_num) {
-    // console.log(img_num + " " + prev_img_num);
-    images[prev_img_num - 1].classList.remove("visible");
+function setImage(img_num) {
+    images[current_img - 1].classList.remove("visible");
+    dom_dots[current_img - 1].classList.remove("highlighted");
     images[img_num - 1].classList.add("visible");
+    dom_dots[img_num - 1].classList.add("highlighted");
+    current_img = img_num;
 }
+dom_dots.forEach(function (dot, i) {
+    dot.addEventListener("click", function () {
+        setImage(i + 1);
+    });
+});
 setInterval(() => {
     nextImage();
-}, 5000);
+}, 7000);
