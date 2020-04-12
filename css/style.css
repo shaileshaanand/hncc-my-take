@@ -405,9 +405,11 @@ body {
     z-index: 2;
     margin: 7px;
     border-radius: 50%;
+    transition: backgroung 0s;
 }
 #gallery .gallery-container .dots .highlighted {
     background: rgba(255, 255, 255, 0.8);
+    transition: background 0.3s ease-in;
 }
 
 #sponsors {
