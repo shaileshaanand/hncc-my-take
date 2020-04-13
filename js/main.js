@@ -116,7 +116,6 @@ function prevImage() {
     }
 }
 function nextImage() {
-    console.log(current_img + "  " + n_images);
     if (current_img === n_images) {
         setImage(1);
     } else {
