@@ -317,11 +317,18 @@ body {
     line-height: 1.5;
 }
 #recent-events .cards {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: stretch;
+}
+@media (max-width: 1200px) {
+    #recent-events .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 #recent-events .recent-card {
     text-align: center;
-    justify-self: center;
     margin: 1rem;
     border: 1px solid var(--light-gray);
     border-radius: 7px;

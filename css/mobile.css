@@ -67,6 +67,9 @@
     background-size: 95vw;
 }
 
+#recent-events .cards {
+    display: block;
+}
 #recent-events .recent-card {
     margin: 1.3rem auto;
 }
